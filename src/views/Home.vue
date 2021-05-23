@@ -79,11 +79,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-$width1: 1200px;
-$color1: #ffaf00;
-$color2: #002d55;
-$font-color: #09ae8b;
-$line-color: #64dfb2;
+@import '../styles/var.scss';
 
 img {
   width: 100%;
