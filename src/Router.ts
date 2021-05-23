@@ -1,6 +1,6 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
-import Home from './components/Home.vue'
-import Doc from './components/Doc.vue'
+import Home from './views/Home.vue'
+import Doc from './views/Doc.vue'
 
 const history = createWebHashHistory()
 export const router = createRouter({

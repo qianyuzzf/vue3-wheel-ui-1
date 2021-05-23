@@ -105,7 +105,7 @@ img {
       > a {
         display: block;
         padding: 5px;
-        color: $font-color;
+        color: $font-color1;
         font-size: 1.2em;
       }
       > .logo {
@@ -145,7 +145,7 @@ img {
         left: 50%;
         transform: translateX(-50%);
         p {
-          color: $font-color;
+          color: $font-color1;
           font-size: 1.2em;
         }
       }
@@ -214,7 +214,7 @@ img {
     }
     > .texts {
       > div {
-        border: 2px solid $line-color;
+        border: 2px solid $line-color1;
         position: absolute;
         border-radius: 15%;
         bottom: 30px;
@@ -223,7 +223,7 @@ img {
         height: 200px;
         z-index: 30;
         > div {
-          border: 2px solid $line-color;
+          border: 2px solid $line-color1;
           position: absolute;
           border-radius: 15%;
           width: 180px;
@@ -249,7 +249,7 @@ img {
             grid-column: 1/4;
             padding: 0 15px;
             p {
-              color: $font-color;
+              color: $font-color1;
             }
           }
         }
