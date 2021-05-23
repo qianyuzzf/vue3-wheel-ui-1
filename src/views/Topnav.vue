@@ -24,10 +24,6 @@
 
 <style lang="scss">
 @import '../styles/var.scss';
-
-img {
-  width: 100%;
-}
 .body > .page > .topnav {
   background: white;
   position: -webkit-sticky;
