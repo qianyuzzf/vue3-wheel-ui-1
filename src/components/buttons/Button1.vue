@@ -1,18 +1,18 @@
 <template>
-  <div class="theme-wheel-type">
-    <button class="theme-wheel-white" :class="buttonSize">
+  <div class="theme1-wheel-type">
+    <button class="theme1-wheel-white" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="theme-wheel-blue" :class="buttonSize">
+    <button class="theme1-wheel-blue" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="theme-wheel-none" :class="buttonSize">
+    <button class="theme1-wheel-none" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="theme-wheel-danger" :class="buttonSize">
+    <button class="theme1-wheel-danger" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="theme-wheel-dashed" :class="buttonSize">
+    <button class="theme1-wheel-dashed" :class="buttonSize">
       <span>你好</span>
     </button>
   </div>
@@ -87,8 +87,8 @@ export default {
     }
   }
 
-  > .theme-wheel-type {
-    > .theme-wheel-blue {
+  > .theme1-wheel-type {
+    > .theme1-wheel-blue {
       background: $button-background-color1;
       border-color: $button-background-color1;
       color: white;
@@ -98,7 +98,7 @@ export default {
       }
     }
 
-    > .theme-wheel-none {
+    > .theme1-wheel-none {
       border-color: transparent;
       box-shadow: none;
 
@@ -119,7 +119,7 @@ export default {
       }
     }
 
-    > .theme-wheel-danger {
+    > .theme1-wheel-danger {
       background: #ff4d4f;
       color: white;
 
@@ -131,7 +131,7 @@ export default {
       }
     }
 
-    > .theme-wheel-dashed {
+    > .theme1-wheel-dashed {
       border-style: dashed;
     }
   }

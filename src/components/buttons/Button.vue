@@ -14,16 +14,18 @@ Vue.use(Button);</pre>
     <Button1 size="small"/>
     <Button2/>
     <Button3/>
+    <Button4/>
   </div>
 </template>
 <script lang="ts">
 import Button1 from './Button1.vue';
 import Button2 from './Button2.vue';
 import Button3 from './Button3.vue';
+import Button4 from './Button4.vue';
 
 export default {
   components: {
-    Button1, Button2, Button3
+    Button1, Button2, Button3, Button4
   },
   setup() {
 

@@ -1,11 +1,11 @@
 <template>
-  <div class="theme-wheel-loads">
+  <div class="theme3-wheel-loads">
     <button>
-      <span class="theme-wheel-load"></span>
+      <span class="theme3-wheel-load"></span>
       <span>你好</span>
     </button>
-    <button class="theme-wheel-blue">
-      <span class="theme-wheel-load"></span>
+    <button class="theme3-wheel-blue">
+      <span class="theme3-wheel-load"></span>
       <span>你好</span>
     </button>
   </div>
@@ -14,12 +14,12 @@
 <style lang="scss">
 @import "../../styles/var.scss";
 
-.theme-wheel-loads {
+.theme3-wheel-loads {
   > button {
     display: inline-flex;
     align-items: center;
 
-    > .theme-wheel-load {
+    > .theme3-wheel-load {
       display: inline-block;
       margin-right: 4px;
       width: 15px;
@@ -41,12 +41,15 @@
     }
   }
 
-  > .theme-wheel-blue {
+  > .theme3-wheel-blue {
     background: $button-background-color1;
     border-color: $button-background-color1;
-    color: white;
 
-    > .theme-wheel-load {
+    > span {
+      color: white;
+    }
+
+    > .theme3-wheel-load {
       border-color: white white white transparent;
     }
 
