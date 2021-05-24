@@ -1,18 +1,18 @@
 <template>
   <div class="theme-wheel-type">
-    <button class="white" :class="buttonSize">
+    <button class="theme-wheel-white" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="blue" :class="buttonSize">
+    <button class="theme-wheel-blue" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="none" :class="buttonSize">
+    <button class="theme-wheel-none" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="danger" :class="buttonSize">
+    <button class="theme-wheel-danger" :class="buttonSize">
       <span>你好</span>
     </button>
-    <button class="dashed" :class="buttonSize">
+    <button class="theme-wheel-dashed" :class="buttonSize">
       <span>你好</span>
     </button>
   </div>
@@ -88,7 +88,7 @@ export default {
   }
 
   > .theme-wheel-type {
-    > .blue {
+    > .theme-wheel-blue {
       background: $button-background-color1;
       border-color: $button-background-color1;
       color: white;
@@ -98,7 +98,7 @@ export default {
       }
     }
 
-    > .none {
+    > .theme-wheel-none {
       border-color: transparent;
       box-shadow: none;
 
@@ -119,7 +119,7 @@ export default {
       }
     }
 
-    > .danger {
+    > .theme-wheel-danger {
       background: #ff4d4f;
       color: white;
 
@@ -131,7 +131,7 @@ export default {
       }
     }
 
-    > .dashed {
+    > .theme-wheel-dashed {
       border-style: dashed;
     }
   }
