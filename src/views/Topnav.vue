@@ -34,6 +34,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+  z-index: 200;
 
   > .logo {
     padding-left: 30px;
