@@ -2,20 +2,20 @@
   <div class="body">
     <div class="page">
       <div class="topnav">
-        <a href>GitHub</a>
-        <a href>Gitee</a>
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://gitee.com/">Gitee</a>
         <div class="logo">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-vue" />
+            <use xlink:href="#icon-vue"/>
           </svg>
         </div>
       </div>
       <div class="bigImage">
-        <img src="../images/1.jpg" alt />
+        <img src="../images/1.jpg" alt/>
       </div>
-      <svg width="1200px" height="600px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 0 520 C 680 530, 650 50, 1000 0" stroke="#64dfb2" fill="transparent" />
-        <path d="M 0 540 C 680 560, 650 80, 1000 0" stroke="#64dfb2" fill="transparent" />
+      <svg width="1200px" height="600px" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 520 C 680 530, 650 50, 1000 0" stroke="#64dfb2" fill="transparent"/>
+        <path d="M 0 540 C 680 560, 650 80, 1000 0" stroke="#64dfb2" fill="transparent"/>
       </svg>
       <div class="main">
         <div>
@@ -23,26 +23,26 @@
           <p>官方指南假设你已了解关于 HTML、CSS 和 JavaScript 的中级知识，并且已经完全掌握了 Vue 的正确开发方式。</p>
           <p>如果你刚开始学习前端或者 Vue，将 UI 框架作为你的第一步可能不是最好的主意。</p>
         </div>
-        <a href>开始</a>
+        <router-link to="/doc">开始</router-link>
       </div>
       <div class="image1">
         <div class="image11">
-          <img src="../images/1.jpg" alt />
+          <img src="../images/1.jpg" alt/>
         </div>
       </div>
       <div class="image2">
         <div class="image21">
-          <img src="../images/1.jpg" alt />
+          <img src="../images/1.jpg" alt/>
         </div>
       </div>
       <div class="image3">
-        <img src="../images/1.jpg" alt />
+        <img src="../images/1.jpg" alt/>
       </div>
       <div class="texts">
         <div class="text1">
           <div class="text11">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-vue" />
+              <use xlink:href="#icon-vue"/>
             </svg>
             <div class="content">
               <p>JavaScript,已萨达撒大声地啊答但是</p>
@@ -52,7 +52,7 @@
         <div class="text2">
           <div class="text21">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-vue" />
+              <use xlink:href="#icon-vue"/>
             </svg>
             <div class="content">
               <p>JavaScript</p>
@@ -62,7 +62,7 @@
         <div class="text3">
           <div class="text31">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-vue" />
+              <use xlink:href="#icon-vue"/>
             </svg>
             <div class="content">
               <p>JavaScript</p>
@@ -75,7 +75,7 @@
 </template>
 
 <script lang="ts">
-export default {}
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -84,15 +84,18 @@ export default {}
 img {
   width: 100%;
 }
+
 .body {
   display: flex;
   justify-content: center;
+
   > .page {
     background: linear-gradient(225deg, rgba(179, 235, 214, 1) 0%, rgba(216, 237, 228, 1) 100%);
     width: $width1;
     min-height: 800px;
     position: relative;
     overflow: hidden;
+
     > .topnav {
       position: absolute;
       left: 930px;
@@ -102,21 +105,25 @@ img {
       justify-content: space-between;
       align-items: center;
       z-index: 10;
+
       > a {
         display: block;
         padding: 5px;
         color: $font-color1;
         font-size: 1.2em;
       }
+
       > .logo {
         width: 64px;
         height: 64px;
+
         > svg {
           width: 100%;
           height: 100%;
         }
       }
     }
+
     > .bigImage {
       overflow: hidden;
       position: absolute;
@@ -126,9 +133,11 @@ img {
       height: 600px;
       border-radius: 0 0 300% 50%;
     }
+
     > svg {
       position: absolute;
     }
+
     > .main {
       position: absolute;
       width: 500px;
@@ -136,6 +145,7 @@ img {
       left: 700px;
       top: 160px;
       z-index: 100;
+
       > div {
         position: absolute;
         width: 400px;
@@ -143,11 +153,13 @@ img {
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
+
         p {
           color: $font-color1;
           font-size: 1.2em;
         }
       }
+
       > a {
         position: absolute;
         display: block;
@@ -163,6 +175,7 @@ img {
         transform: translateX(-50%);
       }
     }
+
     > .image1 {
       position: absolute;
       border-radius: 50%;
@@ -171,6 +184,7 @@ img {
       width: 200px;
       height: 200px;
       z-index: 20;
+
       > .image11 {
         position: absolute;
         border-radius: 50%;
@@ -182,6 +196,7 @@ img {
         overflow: hidden;
       }
     }
+
     > .image2 {
       position: absolute;
       border-radius: 50%;
@@ -190,6 +205,7 @@ img {
       width: 180px;
       height: 180px;
       z-index: 20;
+
       > .image21 {
         position: absolute;
         border-radius: 50%;
@@ -201,6 +217,7 @@ img {
         overflow: hidden;
       }
     }
+
     > .image3 {
       position: absolute;
       overflow: hidden;
@@ -211,6 +228,7 @@ img {
       border-radius: 100% 60% 0;
       z-index: 20;
     }
+
     > .texts {
       > div {
         border: 2px solid $line-color1;
@@ -221,6 +239,7 @@ img {
         width: 200px;
         height: 200px;
         z-index: 30;
+
         > div {
           border: 2px solid $line-color1;
           position: absolute;
@@ -236,6 +255,7 @@ img {
           grid-template-columns: 48px auto 48px;
           justify-content: center;
           z-index: 1;
+
           > svg {
             display: block;
             grid-row: 1/2;
@@ -243,19 +263,23 @@ img {
             height: 80px;
             width: 80px;
           }
+
           > div {
             grid-row: 2/3;
             grid-column: 1/4;
             padding: 0 15px;
+
             p {
               color: $font-color1;
             }
           }
         }
       }
+
       > .text2 {
         left: 350px;
       }
+
       > .text3 {
         left: 600px;
       }

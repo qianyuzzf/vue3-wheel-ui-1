@@ -2,7 +2,7 @@
   <div class="topnav">
     <div class="logo">
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-vue" />
+        <use xlink:href="#icon-vue"/>
       </svg>
     </div>
     <div class="texts">
@@ -22,9 +22,10 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../styles/var.scss';
-.body > .page > .topnav {
+
+.topnav {
   background: white;
   position: -webkit-sticky;
   position: sticky;
@@ -33,21 +34,26 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+
   > .logo {
     padding-left: 30px;
+
     > svg {
       height: 80px;
       width: 80px;
     }
   }
+
   > .texts {
     display: flex;
     padding-right: 20px;
+
     > div {
       font-size: $font-size1;
       padding: 26.8px 30px;
     }
   }
+
   > .text1 {
     color: $font-color1;
   }

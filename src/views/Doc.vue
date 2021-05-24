@@ -1,22 +1,22 @@
 <template>
   <div class="body">
     <div class="page">
-      <Topnav />
-      <Main />
+      <Topnav/>
+      <Main/>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Topnav from './Topnav.vue'
-import Main from './Main.vue'
+import Topnav from './Topnav.vue';
+import Main from './Main.vue';
 
 export default {
   components: {
     Topnav,
     Main
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -29,6 +29,7 @@ img {
 .body {
   display: flex;
   justify-content: center;
+
   > .page {
     width: $width1;
     min-height: 800px;
