@@ -2,17 +2,31 @@
   <div class="main">
     <div class="aside">
       <h2>导航</h2>
-      <div class="text1">介绍</div>
-      <div class="text2">安装</div>
-      <div class="text3">如何使用</div>
+      <div class="text1">
+        <router-link to="/doc/introduce">介绍</router-link>
+      </div>
+      <div class="text2">
+        <router-link to="/doc/install">安装</router-link>
+      </div>
+      <div class="text3">
+        <router-link to="/doc/use">如何使用</router-link>
+      </div>
       <h2>组件</h2>
-      <div class="component1">component1</div>
+      <div class="component1">
+        <router-link to="/doc/button">Button 组件</router-link>
+      </div>
       <div class="component2">component2</div>
       <div class="component3">component3</div>
     </div>
-    <div class="content">content</div>
+    <div class="content">
+      <router-view />
+    </div>
   </div>
 </template>
+
+<script lang="ts">
+export default {}
+</script>
 
 <style lang="scss" scoped>
 .body > .page > .main {
