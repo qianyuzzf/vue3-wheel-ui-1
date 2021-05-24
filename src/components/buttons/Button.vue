@@ -12,14 +12,16 @@ Vue.use(Button);</pre>
     <Button1 size="normal"/>
     <Button1 size="big"/>
     <Button1 size="small"/>
+    <Button2/>
   </div>
 </template>
 <script lang="ts">
 import Button1 from './Button1.vue';
+import Button2 from './Button2.vue';
 
 export default {
   components: {
-    Button1
+    Button1, Button2
   },
   setup() {
 
