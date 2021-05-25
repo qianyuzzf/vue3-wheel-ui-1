@@ -2,7 +2,7 @@
   <div class="button-wheel-1">
     <Button1_1 @click="xxx"/>
   </div>
-  <div class="dialog-wheel-overlay">
+  <div class="dialog-wheel-overlay" v-if="visible" @click="onClickOverlay">
     <div class="dialog-wheel-wrapper">
       <div class="dialog-wheel-1">
         <div class="dialog-wheel-header">
@@ -14,8 +14,8 @@
         </div>
         <div class="dialog-wheel-footer">
           <div class="button-wheel-1">
-            <Button1_2 :choose="0" button-name="Cancel"/>
-            <Button1_2 :choose="1" button-name="Ok"/>
+            <Button1_2 :choose="3" button-name="Cancel" @click="cancel"/>
+            <Button1_2 :choose="1" button-name="Ok" @click="ok"/>
           </div>
         </div>
       </div>
@@ -26,6 +26,7 @@
 <script lang="ts">
 import Button1_1 from "../buttons/Button1_1.vue";
 import Button1_2 from "../buttons/Button1_2.vue";
+import {ref} from "vue";
 
 export default {
   components: {
@@ -33,10 +34,23 @@ export default {
     Button1_1,
   },
   setup() {
-    const xxx = () => {
-      console.log(1);
+    const visible = ref(false);
+    const close = () => {
+      visible.value = false;
     };
-    return {xxx};
+    const xxx = () => {
+      visible.value = !visible.value;
+    };
+    const ok = () => {
+      close();
+    };
+    const cancel = () => {
+      close();
+    };
+    const onClickOverlay = () => {
+      close();
+    };
+    return {xxx, visible, ok, cancel, onClickOverlay};
   }
 };
 </script>
@@ -78,6 +92,7 @@ export default {
 
         > p {
           padding: 2px 0;
+          font-size: 1.1em;
         }
       }
 
