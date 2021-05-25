@@ -9,26 +9,31 @@
 Vue.use(Button);</pre>
   </div>
   <div class="button-wheel-1">
-    <Button1 size="normal"/>
-    <Button1 size="big"/>
-    <Button1 size="small"/>
+    <Button1_1 size="normal"/>
+    <Button1_1 size="big"/>
+    <Button1_1 size="small"/>
     <Button2/>
     <Button3/>
     <Button4/>
   </div>
 </template>
+
 <script lang="ts">
 import Button1 from './Button1.vue';
 import Button2 from './Button2.vue';
 import Button3 from './Button3.vue';
 import Button4 from './Button4.vue';
+import Button1_2 from "./Button1_2.vue";
+import Button1_1 from "./Button1_1.vue";
 
 export default {
   components: {
-    Button1, Button2, Button3, Button4
-  },
-  setup() {
-
+    Button1_1,
+    Button1_2,
+    Button1,
+    Button2,
+    Button3,
+    Button4
   }
 };
 </script>

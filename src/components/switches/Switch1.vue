@@ -36,7 +36,7 @@ export default {
   height: $switch-height1;
   width: $switch-height2;
   background: #bfbfbf;
-  border-radius: ($switch-height1) / 2;
+  border-radius: $switch-height4;
   position: relative;
 
   > span {
@@ -46,7 +46,7 @@ export default {
     height: $switch-height3;
     width: $switch-height3;
     background: white;
-    border-radius: ($switch-height3) / 2;
+    border-radius: $switch-height5;
     transition: all 250ms;
   }
 

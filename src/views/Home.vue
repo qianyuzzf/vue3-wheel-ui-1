@@ -165,11 +165,9 @@ img {
         display: block;
         background: #6cdb87;
         color: #d4f1ea;
-        font-size: 1.5em;
-        border-radius: 15px;
-        padding: 6px 25px;
-        width: 100px;
-        height: 50px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        padding: 6px 20px;
         top: 220px;
         left: 50%;
         transform: translateX(-50%);

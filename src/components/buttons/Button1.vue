@@ -1,41 +1,25 @@
 <template>
-  <div class="theme1-wheel-type">
-    <button class="theme1-wheel-white" :class="buttonSize">
-      <span>你好</span>
-    </button>
-    <button class="theme1-wheel-blue" :class="buttonSize">
-      <span>你好</span>
-    </button>
-    <button class="theme1-wheel-none" :class="buttonSize">
-      <span>你好</span>
-    </button>
-    <button class="theme1-wheel-danger" :class="buttonSize">
-      <span>你好</span>
-    </button>
-    <button class="theme1-wheel-dashed" :class="buttonSize">
-      <span>你好</span>
-    </button>
-  </div>
+  <button v-bind="$attrs">
+    <span>{{ buttonName }} </span>
+  </button>
 </template>
 
 <script lang="ts">
-import {ref} from "vue";
-
 export default {
+  inheritAttrs: false,
   props: {
     size: {
       type: String,
       default: 'normal'
+    },
+    choose: {
+      type: Number,
+      default: -1
+    },
+    buttonName: {
+      type: String,
+      default: '你好'
     }
-  },
-  setup(props, context) {
-    const buttonSize = ref('normal');
-    if (props.size === 'big') {
-      buttonSize.value = 'bigSize';
-    } else if (props.size === 'small') {
-      buttonSize.value = 'smallSize';
-    }
-    return {buttonSize};
   },
 };
 </script>
@@ -56,11 +40,11 @@ export default {
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
-      &.bigSize {
+      &.theme1-wheel-big {
         font-size: $big-font-size;
       }
 
-      &.smallSize {
+      &.theme1-wheel-small {
         font-size: $small-font-size;
       }
 
