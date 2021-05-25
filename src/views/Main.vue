@@ -9,6 +9,7 @@
       <router-link to="/doc/button">Button 组件</router-link>
       <router-link to="/doc/switch">Switch 组件</router-link>
       <router-link to="/doc/dialog">Dialog 组件</router-link>
+      <router-link to="/doc/tabs">Tabs 组件</router-link>
     </div>
     <div class="content">
       <router-view/>
