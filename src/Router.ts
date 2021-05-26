@@ -5,6 +5,7 @@ import Button from './components/buttons/Button.vue';
 import Switch from './components/switches/Switch.vue';
 import Dialog from './components/dialogs/Dialog.vue';
 import Tabs from './components/tabs/Tabs.vue';
+import Form from './components/forms/Form.vue';
 
 const history = createWebHashHistory();
 
@@ -31,6 +32,10 @@ export const router = createRouter({
         {
           path: 'tabs',
           component: Tabs
+        },
+        {
+          path: 'form',
+          component: Form
         }
       ]
     }

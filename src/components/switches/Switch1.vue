@@ -38,6 +38,7 @@ export default {
   background: #bfbfbf;
   border-radius: $switch-height4;
   position: relative;
+  cursor: pointer;
 
   > span {
     position: absolute;

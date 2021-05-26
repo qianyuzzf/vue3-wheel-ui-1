@@ -10,6 +10,7 @@
       <router-link to="/doc/switch">Switch 组件</router-link>
       <router-link to="/doc/dialog">Dialog 组件</router-link>
       <router-link to="/doc/tabs">Tabs 组件</router-link>
+      <router-link to="/doc/form">form 组件</router-link>
     </div>
     <div class="content">
       <router-view/>
@@ -39,7 +40,7 @@ export default {};
   }
 
   > .content {
-    width: 1000px;
+    width: 100%;
     padding: 20px 30px;
   }
 }
