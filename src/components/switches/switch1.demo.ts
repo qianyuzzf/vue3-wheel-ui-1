@@ -12,6 +12,10 @@ import Switch1 from "./Switch1.vue";
 export default {
   components: {
     Switch1
+  },
+  setup() {
+    const active = ref(false);
+    return {active};
   }
 };
 </script>

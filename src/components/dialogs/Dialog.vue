@@ -2,7 +2,8 @@
   <div class="button-wheel-1">
     <Button1_1 @click="xxx"/>
   </div>
-  <div class="dialog-wheel-overlay" v-if="visible" @click="onClickOverlay">
+  <template v-if="visible">
+    <div class="dialog-wheel-overlay" @click="onClickOverlay"></div>
     <div class="dialog-wheel-wrapper">
       <div class="dialog-wheel-1">
         <div class="dialog-wheel-header">
@@ -20,7 +21,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </template>
 </template>
 
 <script lang="ts">
@@ -66,46 +67,47 @@ export default {
   height: 100%;
   background: $dialog-background-color1;
   z-index: 200;
+}
 
-  > .dialog-wheel-wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50vh;
-    transform: translateX(-50%) translateY(-50%);
+.dialog-wheel-wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 201;
 
-    > .dialog-wheel-1 {
-      display: inline-block;
-      border-radius: $dialog-border-radius;
-      background: white;
-      min-width: 300px;
-      max-width: 400px;
-      box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+  > .dialog-wheel-1 {
+    display: inline-block;
+    border-radius: $dialog-border-radius;
+    background: white;
+    min-width: 300px;
+    max-width: 400px;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
 
-      > .dialog-wheel-header {
-        padding: 12px 16px;
-        border-bottom: 1px solid $dialog-border-color1;
+    > .dialog-wheel-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid $dialog-border-color1;
+    }
+
+    > .dialog-wheel-main {
+      padding: 12px 16px;
+      border-bottom: 1px solid $dialog-border-color1;
+
+      > p {
+        padding: 2px 0;
+        font-size: 1.1em;
       }
+    }
 
-      > .dialog-wheel-main {
-        padding: 12px 16px;
-        border-bottom: 1px solid $dialog-border-color1;
+    > .dialog-wheel-footer {
+      padding: 3px 5px;
 
-        > p {
-          padding: 2px 0;
-          font-size: 1.1em;
-        }
-      }
+      > .button-wheel-1 {
+        display: flex;
+        flex-direction: row-reverse;
 
-      > .dialog-wheel-footer {
-        padding: 3px 5px;
-
-        > .button-wheel-1 {
-          display: flex;
-          flex-direction: row-reverse;
-
-          .theme1-wheel-blue {
-            margin-right: 0;
-          }
+        .theme1-wheel-blue {
+          margin-right: 0;
         }
       }
     }

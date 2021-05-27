@@ -27,6 +27,7 @@ export default {
   },
   setup() {
     const active = ref(false);
+    const disabled = ref(true);
     const visible1 = ref(false);
     const showOrHide = ref(true);
     const data1 = switch2_().trim();
@@ -42,7 +43,8 @@ export default {
       visible1,
       toggleVisible1,
       active,
-      showOrHide
+      showOrHide,
+      disabled
     };
   }
 };
