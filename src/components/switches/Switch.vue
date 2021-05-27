@@ -16,7 +16,6 @@ Vue.use(Button);</pre>
       <p v-for="item in array" :key="item"></p>
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
