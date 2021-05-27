@@ -20,7 +20,7 @@ import Button1_1 from "../buttons/Button1_1.vue";
 import Button1_2 from "../buttons/Button1_2.vue";
 import Dialog1 from './Dialog1.vue';
 import {ref} from "vue";
-import dialog_ from './dialog1.demo.ts';
+import dialog1_ from './dialog1.demo.ts';
 
 export default {
   components: {
@@ -31,7 +31,7 @@ export default {
   setup() {
     const visible1 = ref(false);
     const showOrHide = ref(true);
-    const data1 = dialog_().trim();
+    const data1 = dialog1_().trim();
     const childVisible = ref(false);
     const Prism = (window as any).Prism;
 
