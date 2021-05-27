@@ -14,13 +14,12 @@ Vue.use(Button);</pre>
     <Button2_demo/>
     <h3>加载中按钮</h3>
     <Button3_demo/>
-    <div class="button-wheel-1">
-      <Button2/>
-      <Button3/>
-      <Button4/>
+    <h3>禁用按钮</h3>
+    <Button4_demo/>
+    <div class="placeholder">
+      <p v-for="item in array" :key="item"></p>
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
@@ -31,9 +30,9 @@ import Button4 from './Button4.vue';
 import Button1_demo from './Button1_demo.vue';
 import Button2_demo from "./Button2_demo.vue";
 import Button3_demo from "./Button3_demo.vue";
+import Button4_demo from "./Button4_demo.vue";
 import 'prismjs';
 import 'prismjs/themes/prism.css';
-
 
 export default {
   components: {
@@ -44,10 +43,23 @@ export default {
     Button1_demo,
     Button2_demo,
     Button3_demo,
+    Button4_demo,
   },
   setup() {
+    const array = [...Array(20).keys()];
+    console.log(array);
     const Prism = (window as any).Prism;
-    return {Prism};
+    return {Prism, array};
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.markdown-body {
+  > .placeholder {
+    > p {
+      height: 20px;
+    }
+  }
+}
+</style>
