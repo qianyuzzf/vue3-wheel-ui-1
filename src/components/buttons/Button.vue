@@ -11,6 +11,7 @@ Vue.use(Button);</pre>
     <h3>不同大小按钮</h3>
     <Button1_demo/>
     <h3>带图案按钮</h3>
+    <Button2_demo/>
     <div class="button-wheel-1">
       <Button2/>
       <Button3/>
@@ -26,6 +27,7 @@ import Button2 from './Button2.vue';
 import Button3 from './Button3.vue';
 import Button4 from './Button4.vue';
 import Button1_demo from './Button1_demo.vue';
+import Button2_demo from "./Button2_demo.vue";
 import 'prismjs';
 import 'prismjs/themes/prism.css';
 
@@ -36,7 +38,8 @@ export default {
     Button2,
     Button3,
     Button4,
-    Button1_demo
+    Button1_demo,
+    Button2_demo,
   },
   setup() {
     const Prism = (window as any).Prism;
