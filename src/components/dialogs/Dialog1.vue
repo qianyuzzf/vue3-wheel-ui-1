@@ -23,7 +23,6 @@
 <script lang="ts">
 import Button1_1 from "../buttons/Button1_1.vue";
 import Button1_2 from "../buttons/Button1_2.vue";
-import {ref} from "vue";
 
 export default {
   components: {
