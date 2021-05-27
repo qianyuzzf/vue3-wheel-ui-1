@@ -24,10 +24,10 @@ export default {};
 
 <style lang="scss" scoped>
 .body > .page > .main {
-  display: flex;
-
   > .aside {
     width: 200px;
+    position: fixed;
+    top: 80px;
 
     > h2 {
       padding: 20px 20px;
@@ -40,6 +40,7 @@ export default {};
   }
 
   > .content {
+    margin-left: 200px;
     width: 100%;
     padding: 20px 30px;
   }

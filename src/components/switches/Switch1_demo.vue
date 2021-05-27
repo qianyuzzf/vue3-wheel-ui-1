@@ -1,6 +1,9 @@
 <template>
   <div class="button-wheel-1">
-    <Button3/>
+    <Switch1 v-model:value="active"/>
+  </div>
+  <div class="placeholderDiv">
+    <p></p>
   </div>
   <div class="button-wheel-1">
     <Button1_2 :choose="1" size="small" button-name="展示代码" @click="toggleVisible1" v-if="showOrHide"/>
@@ -12,20 +15,21 @@
 </template>
 
 <script lang="ts">
-import Button1_2 from "./Button1_2.vue";
-import Button3 from './Button3.vue';
+import Button1_2 from "../buttons/Button1_2.vue";
+import Switch1 from './Switch1.vue';
 import {ref} from "vue";
-import button3_ from './button3.demo.ts';
+import switch1_ from './switch1.demo.ts';
 
 export default {
   components: {
-    Button3,
-    Button1_2
+    Button1_2,
+    Switch1
   },
   setup() {
+    const active = ref(false);
     const visible1 = ref(false);
     const showOrHide = ref(true);
-    const data1 = button3_().trim();
+    const data1 = switch1_().trim();
     const Prism = (window as any).Prism;
 
     const toggleVisible1 = () => {
@@ -37,8 +41,17 @@ export default {
       Prism,
       visible1,
       toggleVisible1,
+      active,
       showOrHide
     };
   }
 };
 </script>
+
+<style lang="scss" scoped>
+> .placeholderDiv {
+  > p {
+    height: 30px;
+  }
+}
+</style>

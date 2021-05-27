@@ -47,9 +47,7 @@ export default {
   },
   setup() {
     const array = [...Array(20).keys()];
-    console.log(array);
-    const Prism = (window as any).Prism;
-    return {Prism, array};
+    return {array};
   }
 };
 </script>

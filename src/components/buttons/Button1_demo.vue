@@ -10,15 +10,16 @@
     <Button1_1 size="small" v-if="chooseResult===2"/>
   </div>
   <div class="button-wheel-1">
-    <Button1_2 :choose="1" size="small" button-name="展示代码" @click="toggleVisible1"/>
+    <Button1_2 :choose="1" size="small" button-name="展示代码" @click="toggleVisible1" v-if="showOrHide"/>
+    <Button1_2 :choose="1" size="small" button-name="隐藏代码" @click="toggleVisible1" v-else/>
   </div>
-  <div v-if="visible1 && visibleResult">
+  <div v-if="chooseResult===0 && visibleResult">
     <pre v-html="Prism.highlight(data1, Prism.languages.html, 'html')"/>
   </div>
-  <div v-if="visible2 && visibleResult">
+  <div v-if="chooseResult===1 && visibleResult">
     <pre v-html="Prism.highlight(data2, Prism.languages.html, 'html')"/>
   </div>
-  <div v-if="visible3 && visibleResult">
+  <div v-if="chooseResult===2 && visibleResult">
     <pre v-html="Prism.highlight(data3, Prism.languages.html, 'html')"/>
   </div>
 </template>
@@ -38,36 +39,27 @@ export default {
   },
   setup() {
     const chooseResult = ref(1);
-    const visible1 = ref(false);
-    const visible2 = ref(false);
-    const visible3 = ref(false);
-    const array = [visible1, visible2, visible3];
+    const showOrHide = ref(true);
     const visibleResult = ref(false);
     const Prism = (window as any).Prism;
     const data1 = button1_big().trim();
     const data2 = button1_normal().trim();
     const data3 = button1_small().trim();
+    const chooseNumber = (number) => {
+      chooseResult.value = number;
+    };
     const chooseNormal = () => {
-      chooseResult.value = 1;
-      visibleResult.value = false;
+      chooseNumber(1);
     };
     const chooseBig = () => {
-      chooseResult.value = 0;
-      visibleResult.value = false;
+      chooseNumber(0);
     };
     const chooseSmall = () => {
-      chooseResult.value = 2;
-      visibleResult.value = false;
+      chooseNumber(2);
     };
     const toggleVisible1 = () => {
-      for (let i = 0; i < array.length; i++) {
-        if (i === chooseResult.value) {
-          array[i].value = !array[i].value;
-        } else {
-          array[i].value = false;
-        }
-        visibleResult.value = true;
-      }
+      visibleResult.value = !visibleResult.value;
+      showOrHide.value = !showOrHide.value;
     };
     return {
       chooseNormal,
@@ -78,11 +70,9 @@ export default {
       data2,
       data3,
       Prism,
-      visible1,
-      visible2,
-      visible3,
       visibleResult,
-      toggleVisible1
+      toggleVisible1,
+      showOrHide
     };
   }
 };
