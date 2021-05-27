@@ -36,16 +36,16 @@ export default {
       padding: 0.3em 0.8em;
       border-radius: $button-border-radius;
       margin: 15px;
-      font-size: $normal-font-size;
+      font-size: $button-normal-font-size;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
       &.theme1-wheel-big {
-        font-size: $big-font-size;
+        font-size: $button-big-font-size;
       }
 
       &.theme1-wheel-small {
-        font-size: $small-font-size;
+        font-size: $button-small-font-size;
       }
 
       &:hover, &:focus {

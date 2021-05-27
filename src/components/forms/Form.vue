@@ -211,18 +211,18 @@ export default {
           width: auto;
           height: auto;
           cursor: pointer;
-          color: $button-color1;
+          color: $form-color1;
           background: white;
-          border: 1px solid $button-border-color1;
+          border: 1px solid $form-border-color1;
           padding: 0.3em 0.8em;
-          border-radius: $button-border-radius;
+          border-radius: $form-border-radius;
           margin: 15px;
-          font-size: $normal-font-size;
+          font-size: $form-normal-font-size;
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 
           &:hover, &:focus {
-            color: $button-background-color1;
-            border-color: $button-background-color1;
+            color: $form-background-color1;
+            border-color: $form-background-color1;
             animation: shadow1 500ms;
             @keyframes shadow1 {
               0% {
@@ -242,12 +242,12 @@ export default {
           }
 
           &[type=submit] {
-            background: $button-background-color1;
-            border-color: $button-background-color1;
+            background: $form-background-color1;
+            border-color: $form-background-color1;
             color: white;
 
             &:hover, &:focus {
-              background: $button-background-color2;
+              background: $form-background-color2;
             }
           }
         }

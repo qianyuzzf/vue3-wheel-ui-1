@@ -7,15 +7,17 @@
     <h2>组件注册</h2>
     <pre>import { Button } from 'ant-design-vue';
 Vue.use(Button);</pre>
+    <h2>示例</h2>
+    <h3>不同大小按钮</h3>
+    <Button1_demo/>
+    <h3>带图案按钮</h3>
+    <div class="button-wheel-1">
+      <Button2/>
+      <Button3/>
+      <Button4/>
+    </div>
   </div>
-  <div class="button-wheel-1">
-    <Button1_1 size="normal"/>
-    <Button1_1 size="big"/>
-    <Button1_1 size="small"/>
-    <Button2/>
-    <Button3/>
-    <Button4/>
-  </div>
+
 </template>
 
 <script lang="ts">
@@ -23,21 +25,22 @@ import Button1 from './Button1.vue';
 import Button2 from './Button2.vue';
 import Button3 from './Button3.vue';
 import Button4 from './Button4.vue';
-import Button1_2 from "./Button1_2.vue";
-import Button1_1 from "./Button1_1.vue";
+import Button1_demo from './Button1_demo.vue';
+import 'prismjs';
+import 'prismjs/themes/prism.css';
+
 
 export default {
   components: {
-    Button1_1,
-    Button1_2,
     Button1,
     Button2,
     Button3,
-    Button4
+    Button4,
+    Button1_demo
+  },
+  setup() {
+    const Prism = (window as any).Prism;
+    return {Prism};
   }
 };
 </script>
-
-<style lang="scss">
-@import '../../styles/var';
-</style>

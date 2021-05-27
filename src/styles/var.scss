@@ -10,9 +10,9 @@ $button-background-color2: #40a9ff;
 $button-border-color1: #d9d9d9;
 $button-border-radius: 4px;
 $button-color1: #333;
-$normal-font-size: 16px;
-$big-font-size: 20px;
-$small-font-size: 12px;
+$button-normal-font-size: 16px;
+$button-big-font-size: 20px;
+$button-small-font-size: 12px;
 
 //Switch.vue
 $switch-height1: 22px;
@@ -32,9 +32,13 @@ $tabs-border-bottom-color: #d9d9d9;
 $tabs-line-color: #1890ff;
 
 //Form.vue
+$form-background-color1: #1890ff;
+$form-background-color2: #40a9ff;
 $form-input-color1: rgba(0, 0, 0, 0.65);
 $form-span-color1: rgba(0, 0, 0, 0.85);
 $form-border-color1: #d9d9d9;
+$form-color1: #333;
 $form-border-radius: 4px;
+$form-normal-font-size: 16px;
 $form-box-shadow1: 0 0 0 2px rgb(24 144 255 / 20%);
 $form-box-shadow2: 0 0 0 2px rgb(245 34 45 / 20%);
