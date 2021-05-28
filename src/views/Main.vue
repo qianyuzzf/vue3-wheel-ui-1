@@ -2,9 +2,9 @@
   <div class="main">
     <div class="aside">
       <h2>导航</h2>
-      <router-link to="/doc/introduce">介绍</router-link>
+      <router-link to="/doc/intro">介绍</router-link>
       <router-link to="/doc/install">安装</router-link>
-      <router-link to="/doc/use">如何使用</router-link>
+      <router-link to="/doc/to_start">开始使用</router-link>
       <h2>组件</h2>
       <router-link to="/doc/button">Button 组件</router-link>
       <router-link to="/doc/switch">Switch 组件</router-link>

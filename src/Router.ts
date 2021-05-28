@@ -6,6 +6,9 @@ import Switch from './components/switches/Switch.vue';
 import Dialog from './components/dialogs/Dialog.vue';
 import Tabs from './components/tabs/Tabs.vue';
 import Form from './components/forms/Form.vue';
+import intro from './navtions/intro.vue';
+import install from './navtions/install.vue';
+import to_start from './navtions/to_start.vue';
 
 const history = createWebHashHistory();
 
@@ -36,6 +39,18 @@ export const router = createRouter({
         {
           path: 'form',
           component: Form
+        },
+        {
+          path: 'intro',
+          component: intro
+        },
+        {
+          path: 'install',
+          component: install
+        },
+        {
+          path: 'to_start',
+          component: to_start
         }
       ]
     }
