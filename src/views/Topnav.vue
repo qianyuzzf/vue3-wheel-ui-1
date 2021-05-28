@@ -35,9 +35,15 @@
   display: flex;
   justify-content: space-between;
   z-index: 200;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 
   > .logo {
     padding-left: 30px;
+    @media (max-width: 600px) {
+      padding-left: 20px;
+    }
 
     > svg {
       margin-top: 20px;
@@ -49,11 +55,23 @@
   > .texts {
     display: flex;
     padding-right: 20px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
 
     > div {
       font-size: $font-size1;
       padding: 26.8px 30px;
       color: #595959;
+      @media (max-width: 600px) {
+        font-size: 16px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        > a {
+          width: 40px;
+        }
+      }
     }
   }
 

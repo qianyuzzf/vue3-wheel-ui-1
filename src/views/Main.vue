@@ -28,14 +28,24 @@ export default {};
 
   > .aside {
     width: 200px;
+    @media (max-width: 600px) {
+      padding: 0;
+      width: 80px;
+    }
 
     > h2 {
       padding: 20px 20px;
+      @media (max-width: 600px) {
+        padding: 0;
+      }
     }
 
     > a {
       display: block;
       padding: 10px 20px;
+      @media (max-width: 600px) {
+        padding: 0;
+      }
     }
 
     .router-link-active {
@@ -47,6 +57,9 @@ export default {};
   > .content {
     width: 100%;
     padding: 20px 30px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
   }
 }
 </style>
