@@ -2,21 +2,21 @@
   <div class="topnav">
     <div class="logo">
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-vue"/>
+        <use xlink:href="#icon-ui"/>
       </svg>
     </div>
     <div class="texts">
       <div class="text1">
-        <a href>text1</a>
+        <a href="https://vue3js.cn/docs/zh/" target="_blank">Vue3 中文文档</a>
       </div>
       <div class="text2">
-        <a href>text2</a>
+        <a href="https://gitee.com/" target="_blank">Gitee</a>
       </div>
       <div class="text3">
-        <a href>text3</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
       </div>
       <div class="text4">
-        <a href>text4</a>
+        <router-link to="/">回到首页</router-link>
       </div>
     </div>
   </div>
@@ -40,8 +40,9 @@
     padding-left: 30px;
 
     > svg {
-      height: 80px;
-      width: 80px;
+      margin-top: 20px;
+      height: 40px;
+      width: 40px;
     }
   }
 
@@ -52,6 +53,7 @@
     > div {
       font-size: $font-size1;
       padding: 26.8px 30px;
+      color: #595959;
     }
   }
 

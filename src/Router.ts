@@ -21,6 +21,10 @@ export const router = createRouter({
       component: Doc,
       children: [
         {
+          path: '',
+          component: intro
+        },
+        {
           path: 'button',
           component: Button
         },
