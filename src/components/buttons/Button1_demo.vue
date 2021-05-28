@@ -27,7 +27,7 @@
 <script lang="ts">
 import Button1_2 from "./Button1_2.vue";
 import Button1_1 from "./Button1_1.vue";
-import {ref} from "vue";
+import {onMounted, ref, watchEffect} from "vue";
 import button1_big from './button1_big.demo.ts';
 import button1_normal from './button1_normal.demo.ts';
 import button1_small from './button1_small.demo.ts';
@@ -60,7 +60,20 @@ export default {
     const toggleVisible1 = () => {
       visibleResult.value = !visibleResult.value;
       showOrHide.value = !showOrHide.value;
+      xxx.value += 1;
     };
+    const xxx = ref(1);
+    onMounted(() => {
+      const {clientWidth} = document.documentElement;
+      const width = clientWidth - 60;
+      watchEffect(() => {
+        const yyy = xxx.value;
+        const pre = document.querySelectorAll('pre');
+        for (let i = 0; i < pre.length; i++) {
+          pre[i].style.maxWidth = width + 'px';
+        }
+      }, {flush: 'post'});
+    });
     return {
       chooseNormal,
       chooseBig,

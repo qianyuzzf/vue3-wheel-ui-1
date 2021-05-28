@@ -14,7 +14,7 @@
 <script lang="ts">
 import Button1_2 from "../buttons/Button1_2.vue";
 import Form1 from './Form1.vue';
-import {ref} from "vue";
+import {onMounted, ref, watchEffect} from "vue";
 import Form1_ from './Form1.demo.ts';
 
 export default {
@@ -31,6 +31,7 @@ export default {
     const toggleVisible1 = () => {
       visible1.value = !visible1.value;
       showOrHide.value = !showOrHide.value;
+      xxx.value += 1;
     };
     const formText = new Object({
       name: 'Activity name',
@@ -41,6 +42,18 @@ export default {
       radio: ['Resources', 'Sponsor', 'Venue'],
       textarea: 'Activity form',
       submit: ['submit', 'Submit', 'reset', 'Reset']
+    });
+    const xxx = ref(1);
+    onMounted(() => {
+      const {clientWidth} = document.documentElement;
+      const width = clientWidth - 60;
+      watchEffect(() => {
+        const yyy = xxx.value;
+        const pre = document.querySelectorAll('pre');
+        for (let i = 0; i < pre.length; i++) {
+          pre[i].style.maxWidth = width + 'px';
+        }
+      }, {flush: 'post'});
     });
     return {
       data1,

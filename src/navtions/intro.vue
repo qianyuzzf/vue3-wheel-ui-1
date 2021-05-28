@@ -11,3 +11,20 @@
     </h4>
   </div>
 </template>
+
+<script lang="ts">
+import {onMounted} from "vue";
+
+export default {
+  setup() {
+    onMounted(() => {
+      const {clientWidth} = document.documentElement;
+      const width = clientWidth - 60;
+      const pre = document.querySelectorAll('pre');
+      for (let i = 0; i < pre.length; i++) {
+        pre[i].style.maxWidth = width + 'px';
+      }
+    });
+  }
+};
+</script>

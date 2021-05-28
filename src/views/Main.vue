@@ -91,7 +91,9 @@ export default {
   > .aside {
     width: 200px;
     @media (max-width: 600px) {
+      height: 100vh;
       padding-top: 30px;
+      padding-bottom: 20px;
       position: fixed;
       z-index: 400;
       left: -200px;
@@ -124,4 +126,5 @@ export default {
     padding: 20px 30px;
   }
 }
+
 </style>

@@ -66,7 +66,7 @@
       color: #595959;
       @media (max-width: 600px) {
         font-size: 16px;
-        padding: 0 15px;
+        padding: 0 10px;
         display: flex;
         align-items: center;
         > a {
@@ -74,10 +74,6 @@
         }
       }
     }
-  }
-
-  > .text1 {
-    color: $font-color1;
   }
 }
 </style>

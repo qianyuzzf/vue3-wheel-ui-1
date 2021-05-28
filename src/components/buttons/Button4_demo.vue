@@ -14,7 +14,7 @@
 <script lang="ts">
 import Button1_2 from "./Button1_2.vue";
 import Button4 from './Button4.vue';
-import {ref} from "vue";
+import {onMounted, ref, watchEffect} from "vue";
 import button3_ from './button3.demo.ts';
 
 export default {
@@ -31,7 +31,20 @@ export default {
     const toggleVisible1 = () => {
       visible1.value = !visible1.value;
       showOrHide.value = !showOrHide.value;
+      xxx.value += 1;
     };
+    const xxx = ref(1);
+    onMounted(() => {
+      const {clientWidth} = document.documentElement;
+      const width = clientWidth - 60;
+      watchEffect(() => {
+        const yyy = xxx.value;
+        const pre = document.querySelectorAll('pre');
+        for (let i = 0; i < pre.length; i++) {
+          pre[i].style.maxWidth = width + 'px';
+        }
+      }, {flush: 'post'});
+    });
     return {
       data1,
       Prism,

@@ -22,8 +22,10 @@
           <span>{{ formText.checkbox[0] }}:</span>
           <input id="form-wheel-activity-type1" type="checkbox" name="type1">
           <label for="form-wheel-activity-type1">{{ formText.checkbox[1] }}</label>
+          <span style="opacity: 0;display: none">{{ formText.checkbox[0] }}:</span>
           <input id="form-wheel-activity-type2" type="checkbox" name="type1">
           <label for="form-wheel-activity-type2">{{ formText.checkbox[2] }}</label>
+          <span style="opacity: 0;display: none">{{ formText.checkbox[0] }}:</span>
           <input id="form-wheel-activity-type3" type="checkbox" name="type1">
           <label for="form-wheel-activity-type3">{{ formText.checkbox[3] }}</label>
         </div>
@@ -31,6 +33,7 @@
           <span>{{ formText.radio[0] }}:</span>
           <input id="form-wheel-activity-resource1" type="radio" name="resource1">
           <label for="form-wheel-activity-resource1">{{ formText.radio[1] }}</label>
+          <span style="opacity: 0;display: none">{{ formText.radio[0] }}:</span>
           <input id="form-wheel-activity-resource2" type="radio" name="resource1">
           <label for="form-wheel-activity-resource2">{{ formText.radio[2] }}</label>
         </div>
@@ -83,8 +86,12 @@ export default {
 .form-wheel-code {
   > .form-wheel-code-demo {
     padding: 20px 10px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
 
     > .form-wheel-code-demo-1 {
+
       > div {
         display: flex;
         margin: 30px 0;
@@ -98,6 +105,14 @@ export default {
           flex-direction: row-reverse;
           width: 200px;
           color: $form-span-color1;
+          @media (max-width: 600px) {
+            display: inline-flex !important;
+            width: 130px;
+            margin-right: 8px;
+          }
+          @media (max-width: 350px) {
+            width: 80px;
+          }
 
           &::after {
             content: '✻';
@@ -110,16 +125,24 @@ export default {
         > input {
           height: 32px;
           padding: 4px 11px;
-          line-height: 1.5;
           color: $form-input-color1;
           border: 1px solid $form-border-color1;
           border-radius: $form-border-radius;
           width: 300px;
           outline: none;
           cursor: text;
+          @media (max-width: 600px) {
+            width: 50%;
+          }
+          @media (max-width: 350px) {
+            width: 60%;
+          }
 
           &::-webkit-calendar-picker-indicator {
             filter: invert(0.65);
+            @media (max-width: 600px) {
+              padding: 0;
+            }
           }
 
           &:hover,
@@ -140,6 +163,8 @@ export default {
       }
 
       > .form-wheel-activity-type {
+        flex-wrap: wrap;
+
         > input {
           width: 16px;
           height: 16px;
@@ -148,6 +173,10 @@ export default {
           border-collapse: separate;
           opacity: 0.85;
           margin: 0 5px 0 20px;
+          @media (max-width: 600px) {
+            padding: 0;
+            margin: 0 5px 0 0;
+          }
 
           &#form-wheel-activity-type1 {
             margin: 0 5px 0 0;
@@ -160,10 +189,15 @@ export default {
 
         > label {
           cursor: pointer;
+          @media (max-width: 600px) {
+            margin-right: 50px;
+          }
         }
       }
 
       > .form-wheel-activity-resources {
+        flex-wrap: wrap;
+
         > input {
           width: 16px;
           height: 16px;
@@ -172,6 +206,12 @@ export default {
           border-collapse: separate;
           opacity: 0.85;
           margin: 0 5px 0 20px;
+          @media (max-width: 600px) {
+            margin: 0 5px 0 10px;
+          }
+          @media (max-width: 350px) {
+            margin: 0 5px 0 0;
+          }
 
           &#form-wheel-activity-resource1 {
             margin: 0 5px 0 0;
@@ -184,6 +224,9 @@ export default {
 
         > label {
           cursor: pointer;
+          @media (max-width: 350px) {
+            margin-right: 70px;
+          }
         }
       }
 
@@ -201,6 +244,12 @@ export default {
           resize: none;
           font: inherit;
           font-size: 14px;
+          @media (max-width: 600px) {
+            width: 50%;
+          }
+          @media (max-width: 350px) {
+            width: 60%;
+          }
 
           &::-webkit-calendar-picker-indicator {
             filter: invert(0.65);
@@ -219,6 +268,12 @@ export default {
 
       > .form-wheel-activity-submit {
         padding-left: 200px;
+        @media (max-width: 600px) {
+          padding-left: 60px;
+        }
+        @media (max-width: 350px) {
+          padding-left: 40px;
+        }
 
         > input {
           width: auto;

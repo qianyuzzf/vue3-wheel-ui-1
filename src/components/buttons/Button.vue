@@ -31,8 +31,7 @@ import Button1_demo from './Button1_demo.vue';
 import Button2_demo from "./Button2_demo.vue";
 import Button3_demo from "./Button3_demo.vue";
 import Button4_demo from "./Button4_demo.vue";
-import 'prismjs';
-import 'prismjs/themes/prism.css';
+
 
 export default {
   components: {

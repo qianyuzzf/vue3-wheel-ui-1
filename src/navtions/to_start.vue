@@ -14,11 +14,20 @@
 
 <script lang="ts">
 import button1_normal from '../components/buttons/button1_normal.demo.ts';
+import {onMounted} from "vue";
 
 export default {
   setup() {
     const Prism = (window as any).Prism;
     const data = button1_normal().trim();
+    onMounted(() => {
+      const {clientWidth} = document.documentElement;
+      const width = clientWidth - 60;
+      const pre = document.querySelectorAll('pre');
+      for (let i = 0; i < pre.length; i++) {
+        pre[i].style.maxWidth = width + 'px';
+      }
+    });
     return {data, Prism};
   }
 };
