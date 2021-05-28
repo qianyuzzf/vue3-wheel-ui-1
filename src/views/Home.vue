@@ -13,9 +13,13 @@
       <div class="bigImage">
         <img src="../images/2.jpg" alt/>
       </div>
-      <svg width="1200px" height="600px" xmlns="http://www.w3.org/2000/svg">
+      <svg width="1200px" height="600px" xmlns="http://www.w3.org/2000/svg" class="showOrHide1">
         <path d="M 0 520 C 680 530, 650 50, 1000 0" stroke="#64dfb2" fill="transparent"/>
         <path d="M 0 540 C 680 560, 650 80, 1000 0" stroke="#64dfb2" fill="transparent"/>
+      </svg>
+      <svg width="480px" height="240px" xmlns="http://www.w3.org/2000/svg" class="showOrHide2">
+        <path d="M 0 208 C 272 215, 260 20, 400 0" stroke="#64dfb2" fill="transparent"/>
+        <path d="M 0 216 C 272 224, 260 32, 400 0" stroke="#64dfb2" fill="transparent"/>
       </svg>
       <div class="main">
         <div>
@@ -98,6 +102,10 @@ img {
     min-height: 800px;
     position: relative;
     overflow: hidden;
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 1000px;
+    }
 
     > .topnav {
       position: absolute;
@@ -108,12 +116,20 @@ img {
       justify-content: space-between;
       align-items: center;
       z-index: 10;
+      @media (max-width: 600px) {
+        top: 30px;
+        left: auto;
+        right: 20px;
+      }
 
       > a {
         display: block;
         padding: 5px;
         color: $font-color1;
         font-size: 1.2em;
+        @media (max-width: 600px) {
+          color: rgba(255, 255, 255, 0.8);
+        }
       }
 
       > .logo {
@@ -135,10 +151,29 @@ img {
       width: 800px;
       height: 600px;
       border-radius: 0 0 300% 50%;
+      @media (max-width: 600px) {
+        top: -40px;
+        left: -40px;
+        width: 320px;
+        height: 240px;
+      }
     }
 
     > svg {
       position: absolute;
+
+      &.showOrHide2 {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        &.showOrHide1 {
+          display: none;
+        }
+        &.showOrHide2 {
+          display: inline-block;
+        }
+      }
     }
 
     > .main {
@@ -148,6 +183,13 @@ img {
       left: 700px;
       top: 160px;
       z-index: 100;
+      @media (max-width: 600px) {
+        top: 200px;
+        left: auto;
+        right: 0;
+        width: 340px;
+        height: 300px;
+      }
 
       > div {
         position: absolute;
@@ -156,10 +198,17 @@ img {
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
+        @media (max-width: 600px) {
+          width: 300px;
+        }
 
         p {
           color: $font-color1;
           font-size: 1.2em;
+          @media (max-width: 600px) {
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
       }
 
@@ -174,6 +223,9 @@ img {
         top: 220px;
         left: 50%;
         transform: translateX(-50%);
+        @media (max-width: 600px) {
+          top: 160px;
+        }
       }
     }
 
@@ -185,6 +237,12 @@ img {
       width: 200px;
       height: 200px;
       z-index: 20;
+      @media (max-width: 600px) {
+        top: 120px;
+        left: 70px;
+        width: 100px;
+        height: 100px;
+      }
 
       > .image11 {
         position: absolute;
@@ -195,6 +253,12 @@ img {
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
         overflow: hidden;
+        @media (max-width: 600px) {
+          left: 50%;
+          top: 50%;
+          width: 80px;
+          height: 80px;
+        }
       }
     }
 
@@ -206,6 +270,12 @@ img {
       width: 180px;
       height: 180px;
       z-index: 20;
+      @media (max-width: 600px) {
+        top: 75px;
+        left: 160px;
+        width: 100px;
+        height: 100px;
+      }
 
       > .image21 {
         position: absolute;
@@ -216,6 +286,12 @@ img {
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
         overflow: hidden;
+        @media (max-width: 600px) {
+          left: 50%;
+          top: 50%;
+          width: 80px;
+          height: 80px;
+        }
       }
     }
 
@@ -228,6 +304,13 @@ img {
       height: 300px;
       border-radius: 100% 60% 0;
       z-index: 20;
+      @media (max-width: 600px) {
+        top: 350px;
+        left: auto;
+        right: 0;
+        width: 100px;
+        height: 100px;
+      }
     }
 
     > .texts {
@@ -240,6 +323,13 @@ img {
         width: 200px;
         height: 200px;
         z-index: 30;
+        @media (max-width: 600px) {
+          height: 140px;
+          top: 480px;
+          left: auto;
+          right: 20px;
+          border-radius: 10px;
+        }
 
         > div {
           border: 2px solid $line-color1;
@@ -256,6 +346,13 @@ img {
           grid-template-columns: 58px auto 58px;
           justify-content: center;
           z-index: 1;
+          @media (max-width: 600px) {
+            height: 120px;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+            overflow: visible;
+            border-radius: 10px;
+          }
 
           > svg {
             display: block;
@@ -263,12 +360,23 @@ img {
             grid-column: 2/3;
             height: 60px;
             width: 60px;
+            @media (max-width: 600px) {
+              top: 50%;
+              left: -140px;
+              position: absolute;
+              height: 60px;
+              width: 60px;
+            }
           }
 
           > div {
             grid-row: 2/3;
             grid-column: 1/4;
             padding: 0 15px;
+            @media (max-width: 600px) {
+              grid-row: 1/3;
+              padding: 15px;
+            }
 
             h2 {
               color: $font-color1;
@@ -286,20 +394,39 @@ img {
       > .text2 {
         left: 350px;
         width: 220px;
+        @media (max-width: 600px) {
+          height: 140px;
+          top: 630px;
+          left: auto;
+          right: 20px;
+        }
 
         > .text21 {
           width: 200px;
           grid-template-columns: 68px auto 68px;
+          @media (max-width: 600px) {
+            grid-template-columns: auto;
+          }
         }
       }
 
       > .text3 {
         left: 620px;
         width: 220px;
+        @media (max-width: 600px) {
+          height: 160px;
+          top: 780px;
+          left: auto;
+          right: 20px;
+        }
 
         > .text31 {
           width: 200px;
           grid-template-columns: 68px auto 68px;
+          @media (max-width: 600px) {
+            grid-template-columns: auto;
+            height: 140px;
+          }
         }
       }
     }
