@@ -6,12 +6,12 @@
         <a href="https://gitee.com/">Gitee</a>
         <div class="logo">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-vue"/>
+            <use xlink:href="#icon-ui"/>
           </svg>
         </div>
       </div>
       <div class="bigImage">
-        <img src="../images/1.jpg" alt/>
+        <img src="../images/2.jpg" alt/>
       </div>
       <svg width="1200px" height="600px" xmlns="http://www.w3.org/2000/svg">
         <path d="M 0 520 C 680 530, 650 50, 1000 0" stroke="#64dfb2" fill="transparent"/>
@@ -19,24 +19,24 @@
       </svg>
       <div class="main">
         <div>
-          <p>在开始之前，推荐先学习 Vue 和 ES2015，并正确安装和配置了 Node.js v8.9 或以上。</p>
-          <p>官方指南假设你已了解关于 HTML、CSS 和 JavaScript 的中级知识，并且已经完全掌握了 Vue 的正确开发方式。</p>
-          <p>如果你刚开始学习前端或者 Vue，将 UI 框架作为你的第一步可能不是最好的主意。</p>
+          <p>在开始之前，推荐先学习 Vue 和 ES2015，并安装和配置了 Node.js v10.0 或以上。</p>
+          <p>假设你已了解关于 HTML、CSS 和 JavaScript 的相关知识，并且已经掌握了 Vue 的开发方式。</p>
+          <p>如果你想要交流学习，那么看源代码也是一个很好的主意。</p>
         </div>
         <router-link to="/doc">开始</router-link>
       </div>
       <div class="image1">
         <div class="image11">
-          <img src="../images/1.jpg" alt/>
+          <img src="../images/5.jpg" alt/>
         </div>
       </div>
       <div class="image2">
         <div class="image21">
-          <img src="../images/1.jpg" alt/>
+          <img src="../images/6.jpg" alt/>
         </div>
       </div>
       <div class="image3">
-        <img src="../images/1.jpg" alt/>
+        <img src="../images/4.jpg" alt/>
       </div>
       <div class="texts">
         <div class="text1">
@@ -45,27 +45,30 @@
               <use xlink:href="#icon-vue"/>
             </svg>
             <div class="content">
-              <p>JavaScript,已萨达撒大声地啊答但是</p>
+              <h2>基于 Vue3</h2>
+              <p>使用了 Vue3 部分 API</p>
             </div>
           </div>
         </div>
         <div class="text2">
           <div class="text21">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-vue"/>
+              <use xlink:href="#icon-javascript"/>
             </svg>
             <div class="content">
-              <p>JavaScript</p>
+              <h2>基于 Javascript</h2>
+              <p>源代码符合 Javascript 规范</p>
             </div>
           </div>
         </div>
         <div class="text3">
           <div class="text31">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-vue"/>
+              <use xlink:href="#icon-ts"/>
             </svg>
             <div class="content">
-              <p>JavaScript</p>
+              <h2>基于 Typescript</h2>
+              <p>源代码在 Javascript 的基础上采用 Typescript 书写格式</p>
             </div>
           </div>
         </div>
@@ -98,9 +101,9 @@ img {
 
     > .topnav {
       position: absolute;
-      left: 930px;
-      top: 20px;
-      width: 250px;
+      left: 950px;
+      top: 50px;
+      width: 200px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -114,8 +117,8 @@ img {
       }
 
       > .logo {
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
 
         > svg {
           width: 100%;
@@ -163,8 +166,8 @@ img {
       > a {
         position: absolute;
         display: block;
-        background: #6cdb87;
-        color: #d4f1ea;
+        background: #4ac668;
+        color: #e3edeb;
         font-size: 1.2em;
         border-radius: 8px;
         padding: 6px 20px;
@@ -249,8 +252,8 @@ img {
           transform: translateX(-50%) translateY(-50%);
           overflow: hidden;
           display: grid;
-          grid-template-rows: 80px 96px;
-          grid-template-columns: 48px auto 48px;
+          grid-template-rows: 60px 116px;
+          grid-template-columns: 58px auto 58px;
           justify-content: center;
           z-index: 1;
 
@@ -258,8 +261,8 @@ img {
             display: block;
             grid-row: 1/2;
             grid-column: 2/3;
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
           }
 
           > div {
@@ -267,7 +270,13 @@ img {
             grid-column: 1/4;
             padding: 0 15px;
 
+            h2 {
+              color: $font-color1;
+            }
+
             p {
+              line-height: 26px;
+              padding: 3px 0;
               color: $font-color1;
             }
           }
@@ -276,10 +285,22 @@ img {
 
       > .text2 {
         left: 350px;
+        width: 220px;
+
+        > .text21 {
+          width: 200px;
+          grid-template-columns: 68px auto 68px;
+        }
       }
 
       > .text3 {
-        left: 600px;
+        left: 620px;
+        width: 220px;
+
+        > .text31 {
+          width: 200px;
+          grid-template-columns: 68px auto 68px;
+        }
       }
     }
   }

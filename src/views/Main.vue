@@ -37,6 +37,11 @@ export default {};
       display: block;
       padding: 10px 20px;
     }
+
+    .router-link-active {
+      background: #e6f7ff;
+      color: #189dff;
+    }
   }
 
   > .content {
