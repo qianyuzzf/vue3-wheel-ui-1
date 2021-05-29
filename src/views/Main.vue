@@ -90,6 +90,7 @@ export default {
 
   > .aside {
     width: 200px;
+    left: 0;
     @media (max-width: 600px) {
       height: 100vh;
       padding-top: 30px;
