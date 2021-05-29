@@ -1,3 +1,4 @@
+#用于提交打包代码
 rm -rf dist &&
 yarn build &&
 cd dist &&
