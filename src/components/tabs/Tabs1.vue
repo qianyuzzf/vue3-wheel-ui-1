@@ -85,6 +85,7 @@ export default {
   margin-top: 20px;
 
   > div {
+    text-align: start;
     padding: 4px 10px;
   }
 }

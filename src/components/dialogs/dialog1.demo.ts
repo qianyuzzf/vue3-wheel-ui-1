@@ -2,7 +2,7 @@ export default function () {
   return `
 <template>
   <div class="button-wheel-1">
-    <Button1_2 :choose="0" @click="openDialog"/>
+    <Button1_2 :choose="0" @click="openDialog" button-name="你好"/>
     <Dialog1 :ok="f1" :cancel="f2" :onClickOverlay="f3" v-model:visible="childVisible" :dialogText="dialogText"/>
   </div>
 </template>

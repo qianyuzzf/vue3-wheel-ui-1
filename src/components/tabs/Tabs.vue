@@ -1,12 +1,12 @@
 <template>
   <div class="markdown-body">
-    <h1 id="tabsTop">Tabs 按钮</h1>
-    <p>按钮用于开始一个即时操作。</p>
+    <h1 id="tabsTop">Tabs 标签页</h1>
+    <p>选项卡切换组件。</p>
     <h2>何时使用</h2>
-    <p>标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。</p>
+    <p>提供平级的区域将大块内容进行收纳和展现，保持界面整洁。</p>
     <h2>组件注册</h2>
-    <pre>import { Button } from 'ant-design-vue';
-Vue.use(Button);</pre>
+    <pre>import {xxxxxx} from "vue3-wheel-ui-1";
+import "vue3-wheel-ui-1/dist/lib/wheel.css";</pre>
     <h2>示例</h2>
     <Tabs_demo/>
     <div class="placeholder">

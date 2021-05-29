@@ -7,7 +7,8 @@ export default function () {
 </template>
 
 <script lang="ts">
-import Tabs1 from './Tabs1.vue';
+import {Tabs1} from "vue3-wheel-ui-1";
+import "vue3-wheel-ui-1/dist/lib/wheel.css";
 
 export default {
   components: {
