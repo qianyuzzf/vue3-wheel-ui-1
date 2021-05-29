@@ -26,8 +26,12 @@
 
 <script lang="ts">
 import {ref} from "vue";
+import Footer from './Footer.vue';
 
 export default {
+  components: {
+    Footer
+  },
   setup() {
     const active = ref(false);
     const close = () => {
