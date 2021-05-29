@@ -26,8 +26,8 @@
 
 <style lang="scss" scoped>
 .footer {
-  background: rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.8);
 
   > .remind {
     padding: 50px 120px 0 120px;
