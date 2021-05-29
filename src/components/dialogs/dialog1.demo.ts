@@ -8,8 +8,9 @@ export default function () {
 </template>
 
 <script lang="ts">
-import Dialog1 from "./Dialog1.vue";
-import Button1_2 from "../buttons/Button1_2.vue";
+import { Dialog1 } from 'vue3-wheel-ui-1';
+import { Button1_2 } from 'vue3-wheel-ui-1';
+import 'vue3-wheel-ui-1/dist/lib/wheel.css';
 import {ref} from "vue";
 
 export default {
@@ -24,15 +25,19 @@ export default {
       childVisible.value = false;
     };
     const openDialog = () => {
+      // ...
       childVisible.value = !childVisible.value;
     };
     const f1 = () => {
+      // ...
       close();
     };
     const f2 = () => {
+      // ...
       close();
     };
     const f3 = () => {
+      // ...
       close();
     };
     return {

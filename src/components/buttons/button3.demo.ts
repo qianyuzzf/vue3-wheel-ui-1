@@ -10,8 +10,8 @@ export default function () {
 </template>
 
 <script lang="ts">
-import { Button3 } from 'vue3-wheel-ui-1'
-import 'vue3-wheel-ui-1/dist/lib/wheel.css'
+import { Button3 } from 'vue3-wheel-ui-1';
+import 'vue3-wheel-ui-1/dist/lib/wheel.css';
 
 export default {
   components: {

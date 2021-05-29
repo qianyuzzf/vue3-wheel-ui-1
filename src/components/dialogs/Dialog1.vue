@@ -83,6 +83,7 @@ export default {
       border-bottom: 1px solid $dialog-border-color1;
 
       > p {
+        text-align: start;
         font-size: 22px;
         margin: 0;
       }
@@ -93,6 +94,7 @@ export default {
       border-bottom: 1px solid $dialog-border-color1;
 
       > p {
+        text-align: start;
         margin: 0;
         padding: 2px 0;
         font-size: 16px;

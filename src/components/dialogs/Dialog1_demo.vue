@@ -1,8 +1,8 @@
 <template>
   <div class="button-wheel-1">
-    <h3>可选择的按钮样式</h3>
-    <Button1_1/>
-    <h3>选择其中一个样式点击</h3>
+    <h3>可供选择的按钮样式</h3>
+    <Button1_1 @click="openDialog"/>
+    <h3>假设选择其中一个样式点击</h3>
     <Button1_2 :choose="0" @click="openDialog"/>
     <Dialog1 :ok="f1" :cancel="f2" :onClickOverlay="f3" v-model:visible="childVisible" :dialogText="dialogText"/>
   </div>

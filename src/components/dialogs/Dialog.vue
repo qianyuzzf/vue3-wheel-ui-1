@@ -1,12 +1,12 @@
 <template>
   <div class="markdown-body">
-    <h1 id="dialogTop">Dialog 按钮</h1>
-    <p>按钮用于开始一个即时操作。</p>
+    <h1 id="dialogTop">Dialog 弹出框</h1>
+    <p>弹出模态框。</p>
     <h2>何时使用</h2>
-    <p>标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。</p>
+    <p>常用于消息提示、消息确认，或在当前页面内完成特定的交互操作。</p>
     <h2>组件注册</h2>
-    <pre>import { Button } from 'ant-design-vue';
-Vue.use(Button);</pre>
+    <pre>import {xxxxxx} from "vue3-wheel-ui-1";
+import "vue3-wheel-ui-1/dist/lib/wheel.css"</pre>
     <h2>示例</h2>
     <Dialog1_demo/>
     <div class="placeholder">
