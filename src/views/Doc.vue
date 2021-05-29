@@ -32,7 +32,6 @@ img {
 
   > .page {
     width: $width1;
-    min-height: 800px;
     position: relative;
   }
 }

@@ -100,11 +100,15 @@ img {
     background: linear-gradient(225deg, rgba(179, 235, 214, 1) 0%, rgba(216, 237, 228, 1) 100%);
     width: $width1;
     min-height: 800px;
+    max-height: 100%;
     position: relative;
     overflow: hidden;
     @media (max-width: 600px) {
       width: 100%;
       height: 1000px;
+    }
+    @media (max-width: 350px) {
+      height: 1050px;
     }
 
     > .topnav {
@@ -190,6 +194,9 @@ img {
         width: 340px;
         height: 300px;
       }
+      @media (max-width: 350px) {
+        width: 280px;
+      }
 
       > div {
         position: absolute;
@@ -200,6 +207,9 @@ img {
         transform: translateX(-50%);
         @media (max-width: 600px) {
           width: 300px;
+        }
+        @media (max-width: 350px) {
+          width: 260px;
         }
 
         p {
@@ -225,6 +235,9 @@ img {
         transform: translateX(-50%);
         @media (max-width: 600px) {
           top: 160px;
+        }
+        @media (max-width: 350px) {
+          top: 210px;
         }
       }
     }
@@ -311,6 +324,9 @@ img {
         width: 100px;
         height: 100px;
       }
+      @media (max-width: 350px) {
+        top: 440px;
+      }
     }
 
     > .texts {
@@ -329,6 +345,9 @@ img {
           left: auto;
           right: 20px;
           border-radius: 10px;
+        }
+        @media (max-width: 350px) {
+          top: 560px;
         }
 
         > div {
@@ -400,6 +419,9 @@ img {
           left: auto;
           right: 20px;
         }
+        @media (max-width: 350px) {
+          top: 710px;
+        }
 
         > .text21 {
           width: 200px;
@@ -418,6 +440,9 @@ img {
           top: 780px;
           left: auto;
           right: 20px;
+        }
+        @media (max-width: 350px) {
+          top: 860px;
         }
 
         > .text31 {

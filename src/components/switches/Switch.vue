@@ -55,7 +55,7 @@ export default {
 
 .markdown-body {
   > .placeholder {
-    margin: 50px 0 0 0;
+    margin: 120px 0 0 0;
     color: rgba(255, 0, 0, 0.9);
     font-size: 20px;
     padding: 0 0 10px 0;

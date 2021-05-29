@@ -39,6 +39,9 @@ export default {
       font-size: $button-normal-font-size;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
       cursor: pointer;
+      @media (max-width: 350px) {
+        margin: 15px 8px;
+      }
 
       &.theme1-wheel-big {
         font-size: $button-big-font-size;
