@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/var';
+@import '../../styles/var.scss';
 
 .markdown-body {
   > .button-wheel-1.button-wheel-choose {
