@@ -4,7 +4,7 @@
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-search1"/>
       </svg>
-      <span>你好</span>
+      <span>{{ buttonName1 }}</span>
     </button>
     <button class="theme2-wheel-circle" v-if="!showOne || choose===1">
       <svg class="icon" aria-hidden="true">
@@ -12,7 +12,7 @@
       </svg>
     </button>
     <button class="theme2-wheel-circle" v-if="!showOne || choose===2">
-      <span>A</span>
+      <span>{{ buttonName2 }}</span>
     </button>
   </div>
 </template>
@@ -29,6 +29,14 @@ export default {
     showOne: {
       type: Boolean,
       default: false
+    },
+    buttonName1: {
+      type: String,
+      default: '你好'
+    },
+    buttonName2: {
+      type: String,
+      default: 'A'
     }
   }
 };

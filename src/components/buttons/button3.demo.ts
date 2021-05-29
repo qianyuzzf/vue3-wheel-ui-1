@@ -2,12 +2,16 @@ export default function () {
   return `
 <template>
   <div class="button-wheel-1">
-    <Button3/>
+<!--:show-one="true" 时表示只选择一个，为 false 表示全部选择-->
+<!--当 :show-one="true" 时用 :choose="n" 表示选择第几个-->
+<!--button-name="你好" 为按钮名字-->
+    <Button3 :show-one="true" :choose="0" button-name="你好"/>
   </div>
 </template>
 
 <script lang="ts">
-import Button3 from "./Button3.vue";
+import { Button3 } from 'vue3-wheel-ui-1'
+import 'vue3-wheel-ui-1/dist/lib/wheel.css'
 
 export default {
   components: {
