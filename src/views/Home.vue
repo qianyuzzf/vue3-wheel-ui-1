@@ -2,7 +2,7 @@
   <div class="body">
     <div class="page">
       <div class="topnav">
-        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://github.com/qianyuzzf/vue3-wheel-ui-1/tree/src/src" target="_blank">GitHub</a>
         <a href="https://gitee.com/" target="_blank">Gitee</a>
         <div class="logo">
           <svg class="icon" aria-hidden="true">

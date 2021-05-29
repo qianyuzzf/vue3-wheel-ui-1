@@ -13,7 +13,7 @@
         <a href="https://gitee.com/" target="_blank">Gitee</a>
       </div>
       <div class="text3">
-        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://github.com/qianyuzzf/vue3-wheel-ui-1/tree/src/src" target="_blank">GitHub</a>
       </div>
       <div class="text4">
         <router-link to="/">回到首页</router-link>
