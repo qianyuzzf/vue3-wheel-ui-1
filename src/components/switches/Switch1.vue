@@ -40,6 +40,9 @@ export default {
   position: relative;
   cursor: pointer;
   margin-left: 15px;
+  @media (max-width: 600px) {
+    cursor: auto;
+  }
 
   > span {
     position: absolute;
@@ -62,6 +65,10 @@ export default {
     > span {
       left: calc(100% - #{$switch-height3} - 2px);
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
