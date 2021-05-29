@@ -1,12 +1,12 @@
 <template>
   <div class="markdown-body">
     <h1 id="formTop">Form 表单</h1>
-    <p>按钮用于开始一个即时操作。</p>
+    <p>具有数据收集、重置和提交功能的表单，包含复选框、单选框、输入框等元素。</p>
     <h2>何时使用</h2>
-    <p>标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。</p>
+    <p>用于创建一个实体或收集信息。</p>
     <h2>组件注册</h2>
-    <pre>import { Button } from 'ant-design-vue';
-Vue.use(Button);</pre>
+    <pre>import {xxxxxx} from "vue3-wheel-ui-1";
+import "vue3-wheel-ui-1/dist/lib/wheel.css";</pre>
     <h2>示例</h2>
     <Form1_demo/>
     <div class="placeholder">
