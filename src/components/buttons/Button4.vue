@@ -1,16 +1,43 @@
 <template>
   <div class="theme4-wheel-disabled">
-    <button class="theme4-wheel-white">
-      <span>你好</span>
+    <button class="theme4-wheel-white" v-if="!showOne || choose===0">
+      <span>{{ buttonName1 }}</span>
     </button>
-    <button class="theme4-wheel-blue">
-      <span>你好</span>
+    <button class="theme4-wheel-blue" v-if="!showOne || choose===1">
+      <span>{{ buttonName2 }}</span>
     </button>
-    <button class="theme4-wheel-none">
-      <span>你好</span>
+    <button class="theme4-wheel-none" v-if="!showOne || choose===2">
+      <span>{{ buttonName3 }}</span>
     </button>
   </div>
 </template>
+
+<script lang="ts">
+export default {
+  props: {
+    choose: {
+      type: Number,
+      default: 0
+    },
+    showOne: {
+      type: Boolean,
+      default: false
+    },
+    buttonName1: {
+      type: String,
+      default: '你好'
+    },
+    buttonName2: {
+      type: String,
+      default: '你好'
+    },
+    buttonName3: {
+      type: String,
+      default: '你好'
+    },
+  }
+};
+</script>
 
 <style lang="scss">
 @import "../../styles/var.scss";

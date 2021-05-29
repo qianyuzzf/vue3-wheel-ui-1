@@ -15,7 +15,7 @@
 import Button1_2 from "./Button1_2.vue";
 import Button4 from './Button4.vue';
 import {onMounted, ref, watchEffect} from "vue";
-import button3_ from './button3.demo.ts';
+import button4_ from './button4.demo.ts';
 
 export default {
   components: {
@@ -25,7 +25,7 @@ export default {
   setup() {
     const visible1 = ref(false);
     const showOrHide = ref(true);
-    const data1 = button3_().trim();
+    const data1 = button4_().trim();
     const Prism = (window as any).Prism;
 
     const toggleVisible1 = () => {
