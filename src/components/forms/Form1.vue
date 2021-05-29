@@ -207,7 +207,7 @@ export default {
           opacity: 0.85;
           margin: 0 5px 0 20px;
           @media (max-width: 600px) {
-            margin: 0 5px 0 10px;
+            margin: 0 5px 0 0;
           }
           @media (max-width: 350px) {
             margin: 0 5px 0 0;
