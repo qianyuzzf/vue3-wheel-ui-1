@@ -5,8 +5,9 @@
       <router-link to="/doc/install">安装</router-link>
       转到安装页面
     </p>
-    <h2>然后在你的代码中使用如下代码</h2>
-    <pre>import {xxxxxx} from "xxxxxx";</pre>
+    <h2>然后在你的代码中可以使用如下代码引入组件</h2>
+    <pre>import {xxxxxx} from "vue3-wheel-ui-1";
+import "vue3-wheel-ui-1/dist/lib/wheel.css"</pre>
     <h2>单文件组件代码示例</h2>
     <pre v-html="Prism.highlight(data, Prism.languages.html, 'html')"/>
   </div>

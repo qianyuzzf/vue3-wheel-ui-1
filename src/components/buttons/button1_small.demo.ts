@@ -7,7 +7,8 @@ export default function () {
 </template>
 
 <script lang="ts">
-import Button1_1 from "./Button1_1.vue";
+import { Button1_1 } from 'vue3-wheel-ui-1'
+import 'vue3-wheel-ui-1/dist/lib/wheel.css'
 
 export default {
   components: {
