@@ -5,7 +5,4 @@ dist-ssr
 *.local
 .idea
 deploy.sh
-package.json
-rollup.config.ts
-vite.config.ts
 yarn.lock
