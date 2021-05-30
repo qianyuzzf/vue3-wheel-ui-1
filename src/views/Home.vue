@@ -72,7 +72,7 @@
             </svg>
             <div class="content">
               <h2>基于 Typescript</h2>
-              <p>源代码在 Javascript 的基础上采用 Typescript 书写格式</p>
+              <p>源代码采用 TypeScript 书写（非严格检查）</p>
             </div>
           </div>
         </div>
