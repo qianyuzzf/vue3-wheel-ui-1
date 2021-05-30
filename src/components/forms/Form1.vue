@@ -169,6 +169,9 @@ export default {
           grid-template-columns: 135px 20px auto;
           grid-template-rows: auto auto auto;
         }
+        @media (max-width: 350px) {
+          grid-template-columns: 85px 20px auto;
+        }
 
         > input {
           width: 16px;
@@ -206,6 +209,9 @@ export default {
           display: grid;
           grid-template-columns: 135px 20px auto;
           grid-template-rows: auto auto;
+        }
+        @media (max-width: 350px) {
+          grid-template-columns: 85px 20px auto;
         }
 
         > input {
