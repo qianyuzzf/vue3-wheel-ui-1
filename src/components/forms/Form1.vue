@@ -164,6 +164,11 @@ export default {
 
       > .form-wheel-activity-type {
         flex-wrap: wrap;
+        @media (max-width: 600px) {
+          display: grid;
+          grid-template-columns: 135px 20px auto;
+          grid-template-rows: auto auto auto;
+        }
 
         > input {
           width: 16px;
@@ -197,6 +202,11 @@ export default {
 
       > .form-wheel-activity-resources {
         flex-wrap: wrap;
+        @media (max-width: 600px) {
+          display: grid;
+          grid-template-columns: 135px 20px auto;
+          grid-template-rows: auto auto;
+        }
 
         > input {
           width: 16px;

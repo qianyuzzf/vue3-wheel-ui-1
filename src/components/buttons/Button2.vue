@@ -18,8 +18,6 @@
 </template>
 
 <script lang="ts">
-import '../../assets/svg.js';
-
 export default {
   props: {
     choose: {

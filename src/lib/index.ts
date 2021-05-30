@@ -1,3 +1,6 @@
+import '../styles/index.scss';
+import '../assets/svg.js';
+
 export {default as Button1_1} from '../components/buttons/Button1_1.vue';
 export {default as Button1_2} from '../components/buttons/Button1_2.vue';
 export {default as Button2} from '../components/buttons/Button2.vue';
