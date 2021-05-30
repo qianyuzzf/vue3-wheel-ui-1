@@ -3,9 +3,9 @@
     <h1>安装</h1>
     <p>你可以使用 yarn 或者 npm 来进行安装。</p>
     <h2>yarn</h2>
-    <pre>yarn add vue3-wheel-ui-1@0.1.0;</pre>
+    <pre>yarn add vue3-wheel-ui-1@0.1.5;</pre>
     <h2>npm</h2>
-    <pre>npm install vue3-wheel-ui-1@0.1.0;</pre>
+    <pre>npm install vue3-wheel-ui-1@0.1.5;</pre>
     <h4>下一节
       <router-link to="/doc/to_start">开始使用</router-link>
     </h4>
