@@ -1,7 +1,8 @@
 <template>
   <button class="switch-wheel-normal" :class="[{'switch-wheel-checked':value},{disabled:disabled}]"
           :disabled="disabled"
-          @click="toggle">
+          @click="toggle"
+          type='button'>
     <span></span>
   </button>
 </template>

@@ -52,7 +52,7 @@
 
 <script lang="ts">
 import Switch1 from '../switches/Switch1.vue';
-import {ref} from "vue";
+import {ref} from 'vue';
 
 export default {
   components: {
