@@ -19,19 +19,16 @@ import "vue3-wheel-ui-1/dist/lib/wheel.css"</pre>
       可以回到顶部
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script lang="ts">
 import Switch1_demo from './Switch1_demo.vue';
 import Switch2_demo from './Switch2_demo.vue';
-import Footer from '../../views/Footer.vue';
 
 export default {
   components: {
     Switch1_demo,
-    Switch2_demo,
-    Footer
+    Switch2_demo
   },
   setup() {
     const goAnchor = (id) => {

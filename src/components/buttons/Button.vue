@@ -23,7 +23,6 @@ import "vue3-wheel-ui-1/dist/lib/wheel.css"</pre>
       可以回到顶部
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script lang="ts">
@@ -32,10 +31,9 @@ import Button2 from './Button2.vue';
 import Button3 from './Button3.vue';
 import Button4 from './Button4.vue';
 import Button1_demo from './Button1_demo.vue';
-import Button2_demo from "./Button2_demo.vue";
-import Button3_demo from "./Button3_demo.vue";
-import Button4_demo from "./Button4_demo.vue";
-import Footer from '../../views/Footer.vue';
+import Button2_demo from './Button2_demo.vue';
+import Button3_demo from './Button3_demo.vue';
+import Button4_demo from './Button4_demo.vue';
 
 
 export default {
@@ -47,8 +45,7 @@ export default {
     Button1_demo,
     Button2_demo,
     Button3_demo,
-    Button4_demo,
-    Footer
+    Button4_demo
   },
   setup() {
     const goAnchor = (id) => {

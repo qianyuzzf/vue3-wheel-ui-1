@@ -16,17 +16,14 @@ import "vue3-wheel-ui-1/dist/lib/wheel.css";</pre>
       可以回到顶部
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script lang="ts">
 import Tabs_demo from './Tabs1_demo.vue';
-import Footer from '../../views/Footer.vue';
 
 export default {
   components: {
-    Tabs_demo,
-    Footer
+    Tabs_demo
   },
   setup() {
     const goAnchor = (id) => {

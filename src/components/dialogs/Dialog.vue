@@ -16,17 +16,14 @@ import "vue3-wheel-ui-1/dist/lib/wheel.css"</pre>
       可以回到顶部
     </div>
   </div>
-  <Footer/>
 </template>
 
 <script lang="ts">
 import Dialog1_demo from './Dialog1_demo.vue';
-import Footer from '../../views/Footer.vue';
 
 export default {
   components: {
-    Dialog1_demo,
-    Footer
+    Dialog1_demo
   },
   setup() {
     const goAnchor = (id) => {
