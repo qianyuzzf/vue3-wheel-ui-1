@@ -2,7 +2,7 @@
   <div class="main">
     <div class="expand" :class="{showAside:active}" @click="open">
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-kuozhan"/>
+        <use xlink:href="#icon-kuozhan" />
       </svg>
     </div>
     <div class="overlay" v-if="active" @click="close"></div>
@@ -16,33 +16,33 @@
       <router-link to="/doc/switch">Switch 组件</router-link>
       <router-link to="/doc/dialog">Dialog 组件</router-link>
       <router-link to="/doc/tabs">Tabs 组件</router-link>
-      <router-link to="/doc/form">form 组件</router-link>
+      <router-link to="/doc/form">Form 组件</router-link>
     </div>
     <div class="content">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import {ref} from "vue";
+import { ref } from 'vue'
 
 export default {
   setup() {
-    const active = ref(false);
+    const active = ref(false)
     const close = () => {
-      active.value = false;
-    };
+      active.value = false
+    }
     const open = () => {
-      active.value = !active.value;
-    };
-    return {active, close, open};
+      active.value = !active.value
+    }
+    return { active, close, open }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/var.scss";
+@import '../styles/var.scss';
 
 .body > .page > .main {
   display: flex;
@@ -127,5 +127,4 @@ export default {
     padding: 20px 30px;
   }
 }
-
 </style>
